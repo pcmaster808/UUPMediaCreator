@@ -14,8 +14,8 @@ namespace WindowsUpdateLib
         public static void Decrypt(string encryptedFile, string decryptedFile, byte[] key)
         {
             using (var fsc = new FileStream(encryptedFile, FileMode.Open, FileAccess.Read))
-                using (var fsp = new FileStream(decryptedFile, FileMode.Create, FileAccess.ReadWrite))
-                    DecryptStream(fsc, fsp, key);
+            using (var fsp = new FileStream(decryptedFile, FileMode.Create, FileAccess.ReadWrite))
+                DecryptStream(fsc, fsp, key);
         }
 
         private static void DecryptStream(FileStream encryptedFile, FileStream decryptedFile, byte[] key)

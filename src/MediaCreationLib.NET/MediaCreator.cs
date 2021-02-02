@@ -1,14 +1,14 @@
-﻿using Imaging;
+﻿using CompDB;
+using Imaging;
 using MediaCreationLib.BaseEditions;
 using MediaCreationLib.BootlegEditions;
 using MediaCreationLib.Installer;
+using MediaCreationLib.Planning.NET;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UUPMediaCreator.InterCommunication;
-using MediaCreationLib.Planning.NET;
-using CompDB;
 
 namespace MediaCreationLib
 {
@@ -204,7 +204,7 @@ namespace MediaCreationLib
                 File.Delete(vhdpath);
             }
 
-            exit:
+        exit:
             return result;
         }
 
@@ -323,10 +323,10 @@ namespace MediaCreationLib
             progressCallback?.Invoke(Common.ProcessPhase.Done, true, 0, "");
             goto exit;
 
-            error:
+        error:
             progressCallback?.Invoke(Common.ProcessPhase.Error, true, 0, "");
 
-            exit:
+        exit:
             return;
         }
 
@@ -375,10 +375,10 @@ namespace MediaCreationLib
             progressCallback?.Invoke(Common.ProcessPhase.Done, true, 0, "");
             goto exit;
 
-            error:
+        error:
             progressCallback?.Invoke(Common.ProcessPhase.Error, true, 0, "");
 
-            exit:
+        exit:
             return;
         }
     }

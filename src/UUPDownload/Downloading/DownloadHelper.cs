@@ -92,7 +92,7 @@ namespace UUPDownload.Downloading
             string outputPath = filename.Replace(filenameonly, "");
 
             // Download starts here
-            
+
             DateTime startTime = DateTime.Now;
 
             DownloadService downloader = new DownloadService(downloadOpt);

@@ -197,10 +197,10 @@ namespace MediaCreationLib.Dism
         public static void SetTargetEdition(string ospath, string edition, ProgressCallback progressCallback)
         {
             int counter = 0;
-            //
-            // Initialize DISM log
-            //
-            tryagain:
+        //
+        // Initialize DISM log
+        //
+        tryagain:
             string tempLog = Path.GetTempFileName();
             DismApi.Initialize(DismLogLevel.LogErrorsWarningsInfo, tempLog);
             DismSession session = DismApi.OpenOfflineSession(ospath);

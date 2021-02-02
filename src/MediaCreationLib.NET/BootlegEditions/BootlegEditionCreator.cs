@@ -1,6 +1,7 @@
 ﻿using Imaging;
 using IniParser;
 using IniParser.Model;
+using MediaCreationLib.Dism;
 using Microsoft.Cabinet;
 using Microsoft.Wim;
 using System;
@@ -8,7 +9,6 @@ using System.IO;
 using System.Linq;
 using UUPMediaCreator.InterCommunication;
 using static MediaCreationLib.MediaCreator;
-using MediaCreationLib.Dism;
 
 namespace MediaCreationLib.BootlegEditions
 {

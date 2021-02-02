@@ -277,9 +277,9 @@ namespace MediaCreationLib.Installer
                 }
             }
 
-            //
-            // We're done
-            //
+        //
+        // We're done
+        //
 
         exit:
             return result;

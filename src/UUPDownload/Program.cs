@@ -19,7 +19,6 @@
 // DEALINGS IN THE SOFTWARE.
 
 using CommandLine;
-using Common;
 using CompDB;
 using Newtonsoft.Json;
 using System;

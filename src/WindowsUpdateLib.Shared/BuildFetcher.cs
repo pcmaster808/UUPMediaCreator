@@ -196,7 +196,7 @@ namespace WindowsUpdateLib
 
             availableEditions.Sort((x, y) => x.Edition.CompareTo(y.Edition));
 
-            exit:
+        exit:
             return availableEditions.ToArray();
         }
 

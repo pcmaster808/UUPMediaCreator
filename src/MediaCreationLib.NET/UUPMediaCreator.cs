@@ -107,7 +107,7 @@ namespace MediaCreationLib
                 File.Delete(Path.Combine(MountedImagePath, "Windows", $"{EditionID}.xml"));
             }
 
-            exit:
+        exit:
             return result;
         }
 
@@ -284,7 +284,7 @@ namespace MediaCreationLib
             // TODO proper labelling of the disc image
             result = CDImage.CDImage.GenerateISOImage(OutputISOPath, OutputMediaPath, label, cdcallback);
 
-            exit:
+        exit:
             return result;
         }
     }
